@@ -73,7 +73,7 @@ const members = [
   },
   {
     name: "Sparklinbro",
-    pfp: "https://yt3.googleusercontent.com/Q6XhlsNzlF37-uju12SPjvn3pKcTUheJ10JpephAK7ZB22UeUESk9u7T7XnPgc7KtAzcgh9eUg=s900-c-k-c0x00ffffff-no-rjg", // Placeholder, update with actual profile picture if available
+    pfp: "https://cdn.discordapp.com/attachments/1305106068036128888/1308396433388601394/Q6XhlsNzlF37-uju12SPjvn3pKcTUheJ10JpephAK7ZB22UeUESk9u7T7XnPgc7KtAzcgh9eUgs900-c-k-c0x00ffffff-no-rj.webp?ex=673dcaa2&is=673c7922&hm=f77aea2842ffffa431b0675abefbad65798f371e1e90866d409d112f9f99c1f1&",
     social: {
       youtube: "https://www.youtube.com/@Sparklinbro"
     },
