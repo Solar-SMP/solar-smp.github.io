@@ -1,3 +1,4 @@
+/* General reset */
 * {
   margin: 0;
   padding: 0;
@@ -23,9 +24,9 @@ nav {
   align-items: center;
 }
 
-nav .logo {
-  font-size: 1.5em;
-  font-weight: bold;
+nav .logo img {
+  height: 40px;
+  width: auto;
 }
 
 nav .discord-link {
@@ -39,7 +40,7 @@ nav .discord-link:hover {
 }
 
 main {
-  max-width: 800px;
+  max-width: 900px;
   margin: 20px auto;
   padding: 10px;
   background: #fff;
@@ -58,29 +59,104 @@ h2 {
   padding-bottom: 5px;
 }
 
-ul {
-  list-style: none;
-  padding: 0;
+.member-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
-ul li {
-  margin: 5px 0;
+.member-card {
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  width: 200px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-ul li a {
+.member-card img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
+.member-card h3 {
+  margin-top: 10px;
+  font-size: 1.1em;
+  color: #333;
+}
+
+.social-links {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.social-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.9em;
+  padding: 5px 8px;
+  border-radius: 4px;
+}
+
+.social-links .youtube {
+  background: #ff0000;
+}
+
+.social-links .twitch {
+  background: #6441a5;
+}
+
+.social-links .twitter {
+  background: #1da1f2;
+}
+
+.developer-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.developer-card {
+  text-align: center;
+  width: 200px;
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.developer-card img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
+.developer-card h3 {
+  margin-top: 10px;
+  font-size: 1.1em;
+  color: #333;
+}
+
+.discord-link {
+  display: flex;
+  align-items: center;
   color: #3498db;
   text-decoration: none;
+  font-weight: bold;
 }
 
-ul li a:hover {
+.discord-link:hover {
   text-decoration: underline;
 }
 
-footer {
-  text-align: center;
-  margin-top: 20px;
-  padding: 10px;
-  background-color: #2c3e50;
-  color: #fff;
-  font-size: 0.9em;
+.discord-link .discord-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
 }
