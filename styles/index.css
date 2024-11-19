@@ -141,3 +141,70 @@ h2 {
   height: 20px;
   margin-right: 8px;
 }
+
+/* Project card styles */
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.project-card {
+  text-align: center;
+  width: 250px;
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.project-card h3 {
+  font-size: 1.2em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  font-size: 0.9em;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.project-card a {
+  color: #3498db;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.project-card a:hover {
+  text-decoration: underline;
+}
+
+/* Styling the project links container */
+.project-links {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.project-icon {
+  width: 20px;  /* Adjust size of icons */
+  height: 20px;
+  transition: transform 0.3s ease;
+}
+
+.project-icon:hover {
+  transform: scale(1.1);  /* Add a hover effect to make the icons grow slightly */
+}
+
+/* Specific styles for GitHub and Modrinth links */
+.github-link img {
+  filter: grayscale(0%); /* Ensure icons are colored */
+}
+
+.modrinth-link img {
+  filter: grayscale(0%);
+}

@@ -79,4 +79,43 @@ developers.forEach(dev => {
 
   developerList.appendChild(developerCard);
 });
-  
+
+const projects = [
+  {
+    name: "RaRays",
+    description: "Orbital Strike Cannons, Inspired by TheCymaera's SkyTorch",
+    repo: "https://github.com/IDoTheHax/RaRays",
+    modrinth: "https://modrinth.com/mod/RaRays",
+    video: "https://www.youtube.com/watch?v=4iZvyrFI8CA"
+  }
+];
+
+function displayProjects() {
+  const projectList = document.getElementById("project-list");
+
+  projects.forEach(project => {
+    const projectCard = document.createElement("div");
+    projectCard.classList.add("project-card");
+
+    projectCard.innerHTML = `
+      <h3>${project.name}</h3>
+      <p>${project.description}</p>
+      <div class="project-links">
+        <a href="${project.repo}" target="_blank" class="github-link">
+          <img src="images/github-icon.png" alt="GitHub" class="project-icon">
+        </a>
+        <a href="${project.modrinth}" target="_blank" class="modrinth-link">
+          <img src="images/modrinth-icon.png" alt="Modrinth" class="project-icon">
+        </a>
+        ${project.video ? `<a href="${project.video}" target="_blank" class="youtube-link">
+          <img src="images/youtube-icon.png" alt="YouTube" class="project-icon">
+        </a>` : ""}
+      </div>
+    `;
+
+    projectList.appendChild(projectCard);
+  });
+}
+
+// Call function to display projects when the page loads
+window.onload = displayProjects;
