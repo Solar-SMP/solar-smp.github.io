@@ -115,3 +115,6 @@ function displayProjects() {
   });
 }
 
+document.addEventListener("DOMContentLoaded", function() {
+  displayProjects();
+});
