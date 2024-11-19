@@ -1,4 +1,3 @@
-// Example member data
 const members = [
     {
       name: "PrestonFighter",
@@ -64,7 +63,6 @@ const developers = [
     }
 ];
   
-// Populate developers dynamically
 const developerList = document.getElementById("developer-list");
 
 developers.forEach(dev => {
@@ -117,5 +115,3 @@ function displayProjects() {
   });
 }
 
-// Call function to display projects when the page loads
-window.onload = displayProjects;
