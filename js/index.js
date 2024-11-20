@@ -82,11 +82,25 @@ const members = [
 ];
 
 const developers = [
-  { name: "IDoTheHax", pfp: "https://cdn.discordapp.com/avatars/987323487343493191/a_8cd21cbf9d485e283f20dc98308990e1.gif", role: "Lead Developer" },
-  { name: "Mesren", pfp: "https://cdn.discordapp.com/avatars/821825265339596830/70147ec0fbe4812af8617006a40aa817.png", role: "Main Developer" },
-  { name: "DroopThusSnoot", pfp: "https://cdn.discordapp.com/avatars/1213119704110211084/a39351184ecad555a2b9e36b211726e5.png", role: "Main Developer" }
+  { 
+    name: "IDoTheHax", 
+    pfp: "https://cdn.discordapp.com/avatars/987323487343493191/a_8cd21cbf9d485e283f20dc98308990e1.gif", 
+    role: "Lead Developer", 
+    github: "https://github.com/IDoTheHax"
+  },
+  { 
+    name: "Mesren", 
+    pfp: "https://cdn.discordapp.com/avatars/821825265339596830/70147ec0fbe4812af8617006a40aa817.png", 
+    role: "Main Developer", 
+    github: "https://github.com/Mesren"
+  },
+  { 
+    name: "DroopThusSnoot", 
+    pfp: "https://cdn.discordapp.com/avatars/1213119704110211084/a39351184ecad555a2b9e36b211726e5.png", 
+    role: "Main Developer", 
+    github: "https://github.com/DroopThusSnoot"
+  }
 ];
-
 const projects = [
   {
     name: "RaRays",
@@ -126,11 +140,16 @@ const developerList = document.getElementById("developer-list");
 developers.forEach(dev => {
   const developerCard = document.createElement("div");
   developerCard.className = "developer-card";
+
   developerCard.innerHTML = `
     <img src="${dev.pfp}" alt="${dev.name}'s profile picture">
     <h3>${dev.name}</h3>
     <p>${dev.role}</p>
+    <div class="developer-links">
+      ${dev.github ? `<a href="${dev.github}" target="_blank"><img src="images/github-icon.png" alt="GitHub" class="developer-icon"></a>` : ""}
+    </div>
   `;
+
   developerList.appendChild(developerCard);
 });
 
